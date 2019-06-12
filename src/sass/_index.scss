@@ -14,7 +14,7 @@ html {
   // font-family: 'Lato', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
 
-  background: url(../images/background.jpg) no-repeat center center fixed; 
+  background: url(../images/bg.svg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -41,7 +41,7 @@ h1 {
   margin-top: 2rem;
 
   &__item {
-    color: $primary-font-color;
+    fill: white;
     font-size: 3rem;
     margin-left: 2rem;
 
@@ -49,4 +49,18 @@ h1 {
       margin-left: 0;
     }
   }
+
+  &__img {
+    color: white;
+  }
+}
+
+.icon {
+  fill: blue;
+  height: 4rem;
+  width: 4rem;
+}
+
+.icon:hover {
+  fill: white;
 }

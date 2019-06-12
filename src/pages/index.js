@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import GithubIcon from "../components/icons/github";
 
 const IndexPage = () => (
   <Layout>
@@ -9,8 +10,11 @@ const IndexPage = () => (
     <h1>Sam Tancharoensuksavai</h1>
     <ul className="nav">
       <li className="nav__link">
-        <a href="#" className="nav__item nav__item--first">
-          Github
+        <a
+          href="https//github.com/akardet"
+          className="nav__item nav__item--first"
+        >
+          <GithubIcon />
         </a>
       </li>
       <li className="nav__link">
