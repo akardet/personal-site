@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* Set all elements to inherit from body */
+}
+
+html {
+  /* font-size: 100% = 16px  |  10/16 = .625 */
+  font-size: 62.5%; /* Set the default font size to easy number to divide by (px/root size = rem) */
+  // font-family: 'Lato', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 50vh;
+  margin-left: 10vw;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.nav {
+  list-style-type: none;
+
+  display: flex;
+  margin-top: 2rem;
+
+  &__item {
+    color: $primary-font-color;
+    font-size: 3rem;
+    margin-left: 2rem;
+
+    &--first {
+      margin-left: 0;
+    }
+  }
+}
