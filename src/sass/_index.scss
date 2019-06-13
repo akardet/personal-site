@@ -11,7 +11,6 @@
 html {
   /* font-size: 100% = 16px  |  10/16 = .625 */
   font-size: 62.5%; /* Set the default font size to easy number to divide by (px/root size = rem) */
-  // font-family: 'Lato', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
 
   background: url(../images/bg.svg) no-repeat center center fixed; 
@@ -26,12 +25,29 @@ body {
 }
 
 main {
-  margin-top: 50vh;
-  margin-left: 10vw;
+  margin-top: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 80vw 1fr;
 }
 
 h1 {
   font-size: 6rem;
+  grid-column: 2 / 3;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  grid-column: 2 / 3;
+  max-width: 80rem;
+  color: #FFF;
+  letter-spacing: .1rem;
+  line-height: 2.5rem;
+
+  display: block;
+  background-color: rgb(31, 31, 31);
+  padding: 2rem;
+  border-radius: 1.5rem;
 }
 
 .nav {
@@ -40,27 +56,45 @@ h1 {
   display: flex;
   margin-top: 2rem;
 
-  &__item {
-    fill: white;
-    font-size: 3rem;
+  grid-column: 2 / 3;
+  justify-content: start; 
+
+  &__link {
     margin-left: 2rem;
 
-    &--first {
+    &-first {
       margin-left: 0;
     }
   }
 
-  &__img {
-    color: white;
+
+  &__item {
+
+    font-size: 3rem;
+    // margin-left: 2rem;
+
+    &-first {
+      margin-left: 0;
+    }
+
+    &-btn {
+      display: block;
+      background-color: blue;
+      color: white;
+    }
   }
 }
 
 .icon {
-  fill: blue;
+  fill: rgba(43, 43, 43, 0.342);
   height: 4rem;
   width: 4rem;
-}
 
-.icon:hover {
-  fill: white;
+  transition: all .3s;
+
+  &:hover {
+    fill: rgba(43, 43, 43, 0.425);
+
+    transform: translateY(-.2rem);
+  }
 }
