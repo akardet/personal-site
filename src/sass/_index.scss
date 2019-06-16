@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
 
 *,
 *::after,
@@ -11,9 +12,10 @@
 html {
   /* font-size: 100% = 16px  |  10/16 = .625 */
   font-size: 62.5%; /* Set the default font size to easy number to divide by (px/root size = rem) */
-  font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Bungee Shade';
 
-  background: url(../images/bg.svg) no-repeat center center fixed; 
+  background: $hero-bg-color no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,76 +27,76 @@ body {
 }
 
 main {
-  margin-top: 40vh;
+  margin-top: 20vh;
+}
+
+.container {
   display: grid;
-  grid-template-columns: 1fr 80vw 1fr;
+  grid-template-columns: 1fr 85vw 1fr;
+  border-radius: 1rem;
 }
 
-h1 {
-  font-size: 6rem;
+.container__hero {
   grid-column: 2 / 3;
-}
-
-p {
-  font-size: 2rem;
-  font-family: 'Lato', sans-serif;
-  grid-column: 2 / 3;
-  max-width: 80rem;
-  color: #FFF;
-  letter-spacing: .1rem;
-  line-height: 2.5rem;
-
-  display: block;
-  background-color: rgb(31, 31, 31);
-  padding: 2rem;
-  border-radius: 1.5rem;
 }
 
 .nav {
   list-style-type: none;
+  letter-spacing: .05rem;
+  display: grid;
+  grid-gap: .7rem;
+  justify-items: end;
+  margin-bottom: 3rem;
 
-  display: flex;
-  margin-top: 2rem;
+  &__btn {
+    background-color: $primary-color;
+    padding: .75rem 2rem;
+    border-radius: 1rem 0 0 1rem;
+    transition: all .3s;
+    box-shadow: .5rem .5rem .4rem rgba(0, 0, 0, 0.253);
 
-  grid-column: 2 / 3;
-  justify-content: start; 
-
-  &__link {
-    margin-left: 2rem;
-
-    &-first {
-      margin-left: 0;
+    &:hover {
+      transform: scale(1.1);
+      background-color: $primary-font-color-h;
     }
   }
 
-
   &__item {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
 
-    font-size: 3rem;
-    // margin-left: 2rem;
-
-    &-first {
-      margin-left: 0;
+    &-icon {
+      fill: $secondary-font-color;
+      max-height: 2.5rem;
+      grid-column: 1 / 2;
     }
 
-    &-btn {
-      display: block;
-      background-color: blue;
-      color: white;
+    &-title {
+      color: $secondary-font-color;
+      width: 6.5rem;
+      margin-left: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    &:link {
+      text-decoration: none;
     }
   }
 }
 
-.icon {
-  fill: rgba(43, 43, 43, 0.342);
-  height: 4rem;
-  width: 4rem;
+h1 {
+  font-family: 'Bungee Shade';
+  font-size: 6rem;
+  line-height: 6.5rem;
+  margin-bottom: 1.5rem;
+  color: $primary-font-color;
+}
 
-  transition: all .3s;
-
-  &:hover {
-    fill: rgba(43, 43, 43, 0.425);
-
-    transform: translateY(-.2rem);
-  }
+h2 {
+  font-family: 'Bungee', cursive;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  color: $primary-font-color;
 }
