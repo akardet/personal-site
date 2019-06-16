@@ -66,6 +66,7 @@ main {
       fill: $secondary-font-color;
       max-height: 2.5rem;
       grid-column: 1 / 2;
+      align-self: start;
     }
 
     &-title {
