@@ -36,6 +36,11 @@ const IndexPage = () => (
           Hi <br /> I'm Sam
         </h1>
         <h2>I like to design and build things for the web</h2>
+        <div className="cta">
+          <a className="cta__btn" href="mailto:stancharoen@gmail.com">
+            Say Hi
+          </a>
+        </div>
       </div>
     </div>
   </Layout>
