@@ -63,10 +63,10 @@ main {
     grid-template-columns: 2rem 1fr;
 
     &-icon {
+      display: block;
       fill: $secondary-font-color;
       max-height: 2.5rem;
-      grid-column: 1 / 2;
-      background-color: pink;
+      grid-column: span 1;
     }
 
     &-title {
@@ -76,7 +76,7 @@ main {
       font-family: 'Montserrat', sans-serif;
       font-size: 1.6rem;
       font-weight: 500;
-      background-color: teal;
+      grid-column: 2 / 3
     }
 
     &:link {
