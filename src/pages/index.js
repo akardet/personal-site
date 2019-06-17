@@ -16,7 +16,7 @@ const IndexPage = () => (
         </a>
       </li>
       <li className="nav__btn">
-        <a href="https://twitter.com/null_ux" className="nav__item">
+        <a href="https://twitter.com/null_ui" className="nav__item">
           <TwitterIcon />
           <span className="nav__item-title">Twitter</span>
         </a>
