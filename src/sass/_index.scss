@@ -45,7 +45,6 @@ main {
   &__bg {
     filter: drop-shadow(0 -.7rem .4rem rgba(0, 0, 0, 0.322));
 
-
     &-box {
       -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
       clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
@@ -87,7 +86,7 @@ main {
     padding: .75rem 2rem;
     border-radius: 1rem 0 0 1rem;
     transition: all .3s;
-    box-shadow: .5rem .5rem .4rem rgba(0, 0, 0, 0.253);
+    box-shadow: .5rem .5rem .6rem rgba(0, 0, 0, 0.253);
 
     &:hover {
       transform: scale(1.1);

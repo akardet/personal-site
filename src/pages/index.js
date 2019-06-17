@@ -33,7 +33,7 @@ const IndexPage = () => (
     <div className="container">
       <div className="container-hero">
         <h1>
-          Hi <br /> I'm Sam
+          Hi <br /> I'm NULL
         </h1>
         <h2>I like to design and build things for the web</h2>
         <div className="cta">
