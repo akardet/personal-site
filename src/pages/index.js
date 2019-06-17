@@ -31,7 +31,7 @@ const IndexPage = () => (
       </li>
     </ul>
     <div className="container">
-      <div className="container__hero">
+      <div className="container-hero">
         <h1>
           Hi <br /> I'm Sam
         </h1>
@@ -40,6 +40,14 @@ const IndexPage = () => (
           <a className="cta__btn" href="mailto:stancharoen@gmail.com">
             Say Hi
           </a>
+        </div>
+      </div>
+      <div className="container-about">
+        <div className="about__bg">
+          <div className="about__bg-box"></div>
+        </div>
+        <div className="about__fg">
+          <div className="about__fg-box"></div>
         </div>
       </div>
     </div>
