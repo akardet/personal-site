@@ -23,11 +23,12 @@ body {
 
 main {
   margin-top: 5vh;
+  height: 100vh;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 85vw 1fr;
+  grid-template-columns: 1fr 55vw 1fr;
   border-radius: 1rem;
 }
 
@@ -60,11 +61,11 @@ main {
     filter: drop-shadow(0 .5rem .4rem rgba(0, 0, 0, 0.459));
 
     &-box {
-      -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-      clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+      -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
       background-color: $primary-bg-color;
       margin-top: 20px;
-      height: 500px;
+      height: 300px;
       width: 100%;
       position: absolute;
       z-index: 5;

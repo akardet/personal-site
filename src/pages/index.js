@@ -42,14 +42,14 @@ const IndexPage = () => (
           </a>
         </div>
       </div>
-      <div className="container-about">
+      {/* <div className="container-about">
         <div className="about__bg">
           <div className="about__bg-box"></div>
         </div>
         <div className="about__fg">
           <div className="about__fg-box"></div>
         </div>
-      </div>
+      </div> */}
     </div>
   </Layout>
 );
